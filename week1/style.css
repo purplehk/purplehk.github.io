@@ -1,4 +1,7 @@
-h1, p {
-	color: purple;
-	background-color: gray
+body {
+	background-color: #fff5ee;
+}
+
+h1, p { 
+	color: indigo;
 }
