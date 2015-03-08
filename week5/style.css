@@ -1,0 +1,119 @@
+body {
+	margin: auto;
+}
+
+div {
+/*	border: 1px dotted blue;*/
+}
+
+h1 {
+	font-family: 'Poiret One', 'Geneva', cursive;
+	font-size: 48px;
+}
+
+a {
+	color: #808080;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #ffd164;
+}
+
+header {
+	margin: 3em auto 5em auto;
+	max-width: 1200px;
+	border-bottom: 2px solid #000000;
+}
+
+nav{
+	margin: auto;
+	max-width: 1000px;
+	padding-bottom: 2.5em;
+	font-family: 'Bitter', 'Palatino', serif;
+	font-size: 18px;
+}
+
+section {
+	max-width: 1200px;
+	margin: auto;
+}
+
+footer {
+	border-top: 2px solid #000000;
+	max-width: 1200px;
+	margin: 5em auto 2.5em auto;
+	padding: 1em 0 0 0;
+	font-family: 'Bitter', 'Palatino', serif;
+	font-size: 18px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+img:hover {
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	background-color: #ffffff;
+}
+
+#logo {
+	color: #000000;
+	text-decoration: none;
+}
+
+#logo.hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+#left-nav {
+	max-width: 500px;
+	float: left;
+}
+
+#cart {
+	max-width: 500px;
+	float: right;
+	text-align: right;
+}
+
+#wordmark {
+	max-width: 350px;
+	margin: auto;
+	text-align: center;
+}
+
+#footer-content {
+	max-width: 1000px;
+	margin: auto;
+	text-align: center;
+}
+
+.navigation {
+	
+}
+
+.inline-nav {
+	display: inline;
+	padding: 0 1.5em 0 0;
+}
+
+.grid {
+	max-width: 880px;
+	margin: 20px auto;
+}
+
+.featured {
+	padding: 5px;
+	line-height: 40px;
+	display: inline;
+}
+
+.footer-list {
+	line-height: 2em;
+}
