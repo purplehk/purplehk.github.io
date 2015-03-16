@@ -18,7 +18,7 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
+a:hover, a:active {
 	padding: .2em 0;
 	border-bottom: 3px solid #ffd164;
 }
