@@ -1,0 +1,106 @@
+body {
+}
+
+section {
+	min-height: 100vh;
+}
+
+main {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 3em 0;
+
+}
+
+h1 {	
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;	
+	font-size: 40px;
+	padding: 1em 0;
+}
+
+h2 {
+	font-family: 'Lobster', cursive;
+	font-size: 30px;
+	padding: 1.6em 0;
+
+}
+
+p{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.5em;
+}
+
+ul {
+	list-style-type: circle;
+	padding-left: 1em;
+}
+
+li {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.5em;
+}
+
+a {
+	color: #ff6f69;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ffeead;
+}
+
+img {
+	float: left;
+}
+
+#reflection {
+	background-color: #96ceb4;
+}
+
+#review {
+	background-color: #ffeead;
+}
+
+#business {
+	margin-bottom: 3em;
+}
+
+.col1 {
+	float: left;
+	max-width: 30%;
+	margin-right: 3em;
+}
+
+.col2 {
+	float: left;
+	max-width: 30%;
+	margin-right: 3em;
+}
+
+.col3 {
+	float: right;
+	max-width: 30%;
+}
+
+.strong {
+	font-weight: 700;
+}
+
+.review-list {
+	width: 30%;
+	float: right;
+}
+
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
