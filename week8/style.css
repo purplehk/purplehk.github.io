@@ -1,0 +1,395 @@
+/*Questions:
+- Fix toggle navigation menu so that the button shows up to the right of the logo*/
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #808080;
+	font-size: 14px;
+	line-height: 1.5em;
+	background-color: #ecf1f2;
+	overflow-x: hidden; /*(For Hidden Nav)*/
+}
+
+header {
+	background-color: #00957f;
+}
+
+nav {
+	background-color: #005A8F;
+}
+
+nav ul {
+	width: 920px;
+	margin: 0 auto;
+	padding: .4em 0;
+}
+
+nav ul li {
+	float: left;
+	padding: 0 4em 0 0;
+}
+
+nav a {
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+}
+
+main {
+	width: 920px;
+/*	border: 1px solid blue;*/
+	margin: 1em auto;
+}
+
+#profile {
+	width: 65%;
+/*	border: 1px solid green;*/
+	float: left;
+}
+
+
+aside {
+	width: 32%;
+	float: right;
+}
+
+section {
+	margin: 1em 0;
+	padding: 1.5em 1em;
+/*	border: 1px solid red;*/
+	background-color: #fff;
+}
+
+section>h3 {
+	font-weight: 600;
+}
+
+
+article {
+	padding: .2em 0;
+	margin: 1em 0;
+}
+
+h1 {
+	font-size: 1.5em;
+	padding: .2em 0 1em 0;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	color: #262626;
+}
+
+h2 {
+	font-size: 1.2em;
+	padding: 0.1em 0 .8em 0;
+	color: #262626;
+}
+
+h3 {
+	font-size: 1em;
+	padding: .1em 0;
+	font-family: 'Raleway', sans-serif;
+	color: #262626;
+}
+
+
+a {
+	text-decoration: none;
+	color: #005a8f;
+}
+
+a:hover {
+	color: #c6d3d7;
+}
+
+.wrapper {
+
+}
+
+#top-header {
+	width: 920px;
+	margin: 0 auto;
+	padding: .5em 0;
+}
+
+#logo {
+	float: left;
+	margin: 0 2em 0 0;
+}
+
+#search {
+	width: 50%;
+	height: 2.5em;	
+	border: .125em solid #262626;
+	border-radius: .125em;
+	background-color: #fff;
+	float: right;
+}
+
+#search p {
+	float: left;
+	line-height: 2.5em;
+	margin-left: 1em;
+}
+
+#search-btn {
+	float: right;
+	height: 100%;
+	cursor:pointer;
+	padding: 1%;
+	border: none;
+}
+
+#user-card {
+
+}
+
+#profile-photo {
+	float: left;
+}
+
+#profile-photo img {
+	width: 12.5em;
+	height: 12.5em;
+}
+
+#name-card {
+	float: left;
+	margin: 0 2em;
+}
+
+#location-card {
+	float: left;
+	margin: 0 2em;
+}
+
+#blurb {
+	clear: both;
+}
+
+.child-card {
+	margin: .5em 0;
+	padding: 1em 0;
+}
+
+.child-card h2{
+	background-color: #C6D3D7;
+	padding: .25em;
+}
+
+.child-info {
+	width: 65%;
+	float: left;
+	padding: .25em;
+}
+
+.child-info article {
+	padding: .2em 0;
+	margin: .5em 0;
+}
+
+.child-photo {
+	width: 25%;
+	float: right;
+	padding: .25em;
+	margin: 1em 0;
+}
+
+.child-photo img {
+	width: 100%
+}
+
+
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+/*------Media Queries------*/
+
+@media screen and (min-width: 1001px) {
+	.hidden-nav {
+		display: none;
+	}
+
+	.nav-trigger {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	
+	#top-header {
+		width: 100%;
+		margin: 0 auto;
+		padding: .5em 0;
+	}
+
+	#logo {
+		margin-left: 1em;
+	}
+
+	#search {
+		margin-right: 1em;
+	}
+
+	#search p {
+		display: none;
+	}
+
+	#search button {
+		float: right;
+	}
+
+	nav {
+		display: none;
+	}
+
+	main {
+		width: 800px;
+	}
+
+	#profile {
+		width: 90%;
+		float: none;
+		margin: 0 auto;
+	}
+
+	aside {
+		width: 90%;
+		float: none;
+		margin: 0 auto;
+	}
+
+	.child-photo {
+	width: 20%;
+	}
+
+
+	/*----- Begin Hidden Nav -----*/
+
+	.hidden-nav {
+	    list-style: none;
+	    background: #005A8F;
+	    width: 100%;
+	    height: 100%;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    z-index: 0;
+	    padding-top: 2em;
+	}
+
+	.wrapper {
+	    min-width: 100%;
+	    min-height: 100%;
+	    background-color: #ecf1f2;
+	    position: relative;
+	    top: 0;
+	    bottom: 100%;
+	    left: 0;
+	    z-index: 1;
+	    padding: 4em 0;
+	}
+
+	.nav-trigger {
+	    position: absolute;
+	    clip: rect(0, 0, 0, 0);
+	}
+
+	label[for="nav-trigger"] {
+	    position: fixed;
+	    top: 15px;
+	    left: 15px;
+	    z-index: 2;
+	    width: 30px;
+	    height: 30px;
+	    cursor: pointer;
+	    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='5'/><rect y='24' width='30' height='5'/><rect y='12' width='30' height='5'/></svg>");
+	    background-size: contain;
+	}
+
+	.nav-trigger:checked + label {
+	    left: 185px;
+	}
+	 
+	.nav-trigger:checked ~ .wrapper {
+	    left: 170px;
+	}
+
+	.nav-trigger + label, .wrapper {
+	    transition: left 0.2s;
+	}
+
+	.hidden-nav li {
+		border-bottom: 1px solid #ecf1f2;
+		padding: 1em;
+	}
+
+
+
+	.hidden-nav li a{
+			font-size: 1em;
+/*			line-height: 3em;*/
+			font-family: 'Raleway', sans-serif;
+			color: #fff;
+	}
+
+
+	/*----- End Hidden Nav -----*/
+
+}
+
+
+@media screen and (max-width: 800px) {
+	main {
+		width: 600px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	main {
+		width: 450px;
+	}
+
+	#profile-photo img {
+		width: 8em;
+		height: 8em;
+	}
+
+	body{
+		font-size: 13px;
+	}
+
+	section {
+		padding: 1.5em 1.2em;
+	}
+
+}
+
+
+@media screen and (max-width: 450px) {
+	main {
+		width: 380px;
+	}
+
+	#profile-photo img {
+		width: 6em;
+		height: 6em;
+	}
+	
+	#name-card {
+		width: 180px;
+	}
+
+	#location-card {
+		width: 100%;
+		margin: 1em 0;
+	}
+
+}
