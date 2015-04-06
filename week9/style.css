@@ -1,5 +1,5 @@
 /*Questions:
-- Fix toggle navigation menu so that the button shows up to the right of the logo*/
+- How to get navigation to not show last border on the right?*/
 
 
 body {
@@ -27,7 +27,8 @@ nav ul {
 
 nav ul li {
 	float: left;
-	padding: 0 4em 0 0;
+	padding: 0 3em;
+	border-right: 1px solid #262626;
 }
 
 nav a {
@@ -205,6 +206,44 @@ a:hover {
 	width: 100%
 }
 
+/*----------------------- Picture List ---------------------*/
+
+/*.picture-list li {
+	width: 90%;
+	margin: .8em 0
+}
+
+.picture-list figure img {
+	width: 3em;
+	float: left;
+	margin-right: .8em;
+}
+
+.picture-list figcaption {
+	float: left;
+	padding: .1em;
+	font-size: .9em;
+}
+*/
+
+
+/*----------------------- Picture Grid ---------------------*/
+
+.picture-grid li {
+	float: left;
+	width: 5.5em;
+	margin: .8em 2%;
+}
+
+.picture-grid figcaption {
+	height: 3em;
+}
+
+.picture-grid figcaption p {
+	font-size: .9em;
+}
+
+
 /*------------------------------ Clearfix -------------------*/
 
 .clearfix:after{
@@ -324,7 +363,7 @@ a:hover {
 	}
 
 	.hidden-nav li {
-		border-bottom: 1px solid #ecf1f2;
+		border-bottom: 1px solid #262626;
 		padding: 1em;
 	}
 
