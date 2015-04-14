@@ -6,12 +6,28 @@ How to style the box? -->
 <html>
 <head>
 	<title>You're Invited to Join The Mom Cooperative</title>
+	<style type="text/css">
+		@media only screen and (max-device-width: 480px) {
+			#main-table {
+				width: 100% !important;
+			}
+
+			#banner {
+				width: 100% !important;
+			}
+
+			#event-listing {
+				width: 100% !important;
+			}
+		}
+	</style>
 </head>
+
 <body style="background-color: #c0c0c0; font-family: Verdana; font-size: 14px; line-height: 18px; ">
-	<table border="0" cellpadding="10" cellspacing="0" width="600" align="center" style="background-color: #fff;">
+	<table border="0" cellpadding="10" cellspacing="0" width="600px" align="center" style="background-color: #fff;" id="main-table">
 		<tr>
 			<td>
-				<img src="momcooperative-logo-4.png" alt="The Mom Cooperative" title="The Mom Cooperative">
+				<img src="momcooperative-logo-4.png" alt="The Mom Cooperative" title="The Mom Cooperative" id="banner"> 
 			</td>
 		</tr>
 		<tr>
@@ -37,23 +53,23 @@ How to style the box? -->
 			<td>
 				<table width="100%" cellpadding="10">
 					<tr>
-						<td width="33%" style="background-color: #ECF1F2;">
-						<a href="#" style="font-weight: bold; font-size: 1.1em; text-decoration: none; color: #00957F;">Arts + Craft Playdate</a>
-						<p style="padding: 0; margin: 0;">at North Point</p>
-						<p style="padding: 0; margin: 0;">Thursday, April 16</p>
-						<p style="padding: 0; margin: 0;">10:00am - 12:00pm</p>
+						<td width="33%" style="background-color: #ECF1F2;" id="event-listing">
+							<a href="#" style="font-weight: bold; font-size: 1.1em; text-decoration: none; color: #00957F;">Arts + Craft Playdate</a>
+							<p style="padding: 0; margin: 0;">at North Point</p>
+							<p style="padding: 0; margin: 0;">Thursday, April 16</p>
+							<p style="padding: 0; margin: 0;">10:00am - 12:00pm</p>
 						</td>
-						<td width="33%">
-						<a href="#" style="font-weight: bold; font-size: 1.1em; text-decoration: none; color: #00957F;">Story Time</a>
-						<p style="padding: 0; margin: 0;">at Shatin Library</p>
-						<p style="padding: 0; margin: 0;">Friday, April 17</p>
-						<p style="padding: 0; margin: 0;">9:30am - 10:30am</p>
+						<td width="33%" id="event-listing">
+							<a href="#" style="font-weight: bold; font-size: 1.1em; text-decoration: none; color: #00957F;">Story Time</a>
+							<p style="padding: 0; margin: 0;">at Shatin Library</p>
+							<p style="padding: 0; margin: 0;">Friday, April 17</p>
+							<p style="padding: 0; margin: 0;">9:30am - 10:30am</p>
 						</td>
-						<td width="33%" style="background-color: #ECF1F2;">
-						<a href="#" style="font-weight: bold; font-size: 16px; text-decoration: none; color: #00957F;">Moms Night Out</a>
-						<p style="padding: 0; margin: 0;">at Speakeasy</p>
-						<p style="padding: 0; margin: 0;">Wednesday, April 22</p>
-						<p style="padding: 0; margin: 0;">8:30pm - 10:30pm</p>
+						<td width="33%" style="background-color: #ECF1F2;" id="event-listing">
+							<a href="#" style="font-weight: bold; font-size: 16px; text-decoration: none; color: #00957F;">Moms Night Out</a>
+							<p style="padding: 0; margin: 0;">at Speakeasy</p>
+							<p style="padding: 0; margin: 0;">Wednesday, April 22</p>
+							<p style="padding: 0; margin: 0;">8:30pm - 10:30pm</p>
 						</td>
 				</table>
 			</td>
