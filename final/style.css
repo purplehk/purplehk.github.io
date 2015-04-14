@@ -1,0 +1,491 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #262626;
+	font-size: 13px;
+	line-height: 1.5em;
+	background-color: #ecf1f2;
+	overflow-x: hidden; /*(For Hidden Nav)*/
+}
+
+header {
+	background-color: #00957f;
+}
+
+nav {
+	background-color: #C6D3D7;
+	font-size: 1.1em;
+}
+
+nav ul {
+	width: 920px;
+	margin: 0 auto;
+	padding: .6em 0;
+}
+
+nav ul li {
+	float: left;
+	padding: 0 2.5em;
+/*	border-right: 1px solid #262626;*/
+}
+
+nav a {
+	font-family: 'Raleway', sans-serif;
+	color: #262626;
+	font-weight: 600;
+}
+
+nav a:hover {
+	color: #fff;
+}
+
+main {
+	width: 920px;
+/*	border: 1px solid blue;*/
+	margin: 1em auto;
+}
+
+
+aside {
+	width: 32%;
+	float: right;
+}
+
+section {
+	margin: 1em 0;
+	padding: 1.5em 1.5em;
+/*	border: 1px solid red;*/
+	background-color: #fff;
+}
+
+
+article {
+	padding: .2em 0;
+	margin: 1em 0;
+}
+
+h1 {
+	font-size: 1.6em;
+	padding: .2em 0 1em 0;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 1.4em;
+	padding: .1em 0 .4em 0;
+}
+
+h3 {
+	font-size: 1.2em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+
+a {
+	text-decoration: none;
+	color: #005a8f;
+}
+
+a:hover {
+	color: #c6d3d7;
+}
+
+p {
+	margin: .6em auto;
+}
+
+/*------------------------- Mobile Nav -----------------*/
+
+.hidden-nav {
+	display: none;
+}
+
+.nav-trigger {
+	display: none;
+}
+
+/*----------------------------- Header -------------------*/
+
+#top-header {
+	width: 920px;
+	margin: 0 auto;
+	padding: .5em 0;
+}
+
+#logo {
+	float: left;
+	margin: 0 2em 0 0;
+}
+
+#search {
+	width: 50%;
+	height: 2.5em;	
+	border: .125em solid #262626;
+	border-radius: .125em;
+	background-color: #fff;
+	float: right;
+}
+
+#search p {
+	float: left;
+	line-height: 1.4em;
+	margin-left: 1em;
+}
+
+#search-btn {
+	float: right;
+	height: 100%;
+	cursor:pointer;
+	padding: 1%;
+	border: none;
+}
+
+/*------------------------------ Profile -----------------*/
+
+#profile {
+	width: 65%;
+/*	border: 1px solid green;*/
+	float: left;
+}
+
+#profile-photo {
+	float: left;
+	margin-bottom: 1em;
+}
+
+#profile-photo img {
+	width: 12.5em;
+	height: 12.5em;
+}
+
+#name-card {
+	float: left;
+	margin: 0 2em;
+}
+
+#location-card {
+	float: left;
+	margin: 0 2em;
+}
+
+#blurb {
+	clear: both;
+}
+
+.child-card {
+	margin: .5em 0;
+	padding: 1em 0;
+}
+
+.child-card h2{
+	background-color: #C6D3D7;
+	padding: .25em;
+}
+
+.child-info {
+	width: 65%;
+	float: left;
+	padding: .25em;
+}
+
+.child-info article {
+	padding: .2em 0;
+	margin: .5em 0;
+}
+
+.child-photo {
+	width: 25%;
+	float: right;
+	padding: .25em;
+	margin: 1em 0;
+}
+
+.child-photo img {
+	width: 100%
+}
+
+
+/*----------------------- Playdate Event ---------------------*/
+
+#event-photo img {
+	width: 100%;
+}
+
+.event-category {
+	color: #000;
+	font-weight: 600;
+}
+
+.event-col {
+	float: left;
+	width: 44%;
+	padding-right: 3%;
+
+}
+
+
+/*----------------------- Picture List ---------------------*/
+
+/*.picture-list li {
+	width: 90%;
+	margin: .8em 0
+}
+
+.picture-list figure img {
+	width: 3em;
+	float: left;
+	margin-right: .8em;
+}
+
+.picture-list figcaption {
+	float: left;
+	padding: .1em;
+	font-size: .9em;
+}
+*/
+
+
+/*----------------------- Picture Grid ---------------------*/
+
+.picture-grid li {
+	float: left;
+	width: 5.5em;
+	margin: .8em 2%;
+}
+
+.picture-grid figcaption {
+	height: 3em;
+}
+
+.picture-grid figcaption p {
+	font-size: .9em;
+}
+
+.view-all {
+	float: right;
+	margin-top: 1em;
+}
+
+
+/*------------------------------ Clearfix -------------------*/
+
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+/*------------------------------Media Queries------------------*/
+
+@media screen and (max-width: 1000px) {
+	.hidden-nav {
+		display: block;
+	}
+
+	.nav-trigger {
+		display: block;
+	}
+
+	nav {
+		display: none;
+	}
+
+	main {
+		width: 100%;
+	}
+
+	aside {
+		width: 90%;
+		float: none;
+		margin: 0 auto;
+	}	
+
+	#top-header {
+		width: 100%;
+		margin: 0 auto;
+		padding: .5em 0;
+	}
+
+
+	#logo {
+		margin-left: 1em;
+	}
+
+	#search {
+		margin-right: 1em;
+	}
+
+	#search p {
+		display: none;
+	}
+
+	#profile {
+		width: 90%;
+		float: none;
+		margin: 0 auto;
+	}
+
+/*----------Mobile Nav----------*/
+
+	.hidden-nav {
+		    list-style: none;
+		    background: #005A8F;
+		    width: 100%;
+		    height: 100%;
+		    position: fixed;
+		    top: 0;
+		    right: 0;
+		    bottom: 0;
+		    left: 0;
+		    z-index: 0;
+		    padding-top: 2em;
+		}
+
+	.wrapper {
+	    min-width: 100%;
+	    min-height: 100%;
+	    background-color: #ecf1f2;
+	    position: relative;
+	    top: 0;
+	    bottom: 100%;
+	    left: 0;
+	    z-index: 1;
+	    padding: 4em 0;
+	}
+
+	.nav-trigger {
+	    position: absolute;
+	    clip: rect(0, 0, 0, 0);
+	}
+
+	label[for="nav-trigger"] {
+	    position: fixed;
+	    top: 15px;
+	    left: 15px;
+	    z-index: 2;
+	    width: 30px;
+	    height: 30px;
+	    cursor: pointer;
+	    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='5'/><rect y='24' width='30' height='5'/><rect y='12' width='30' height='5'/></svg>");
+	    background-size: contain;
+	}
+
+	.nav-trigger:checked + label {
+	    left: 185px;
+	}
+	 
+	.nav-trigger:checked ~ .wrapper {
+	    left: 170px;
+	}
+
+	.nav-trigger + label, .wrapper {
+	    transition: left 0.2s;
+	}
+
+	.hidden-nav li {
+		border-bottom: 1px solid #262626;
+		padding: 1em;
+	}
+
+	.hidden-nav li a{
+			font-size: 1em;
+			font-family: 'Raleway', sans-serif;
+			color: #fff;
+	}
+
+/*-------------End Mobile Nav----------------*/
+
+	#event-photo {
+		display: none;
+	}
+
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1000px) {
+
+	#name-card {
+		width: 60%;
+	}
+
+	.child-photo {
+		width: 20%;
+	}
+}
+
+
+@media only screen and (min-width: 551px) and (max-width: 800px) {
+	main {
+		width: 90%;
+	}
+
+	#profile-photo img {
+		width: 9em;
+		height: 9em;
+	}
+
+	section {
+		padding: 1.5em 1.2em;
+	}
+
+}
+
+
+@media only screen and (min-width: 401px) and (max-width: 550px) {
+
+	#profile-photo img {
+		width: 6em;
+		height: 6em;
+	}
+	
+	h1 {
+		font-size: 18px;
+	}
+
+	h2 {
+		font-size: 16px;
+	}
+
+	#location-card {
+		width: 100%;
+		margin: 1em 0;
+	}
+
+	.event-col {
+	float: none;
+	width: 100%;
+	padding-right: none;
+	}
+
+}
+
+
+@media only screen and (max-width: 400px) {
+
+	#profile-photo img {
+		width: 6em;
+		height: 6em;
+	}
+
+	h1 {
+		font-size: 18px;
+	}
+
+	h2 {
+		font-size: 16px;
+	}
+
+	#location-card {
+		width: 100%;
+		margin: 1em 0;
+	}
+
+		.event-col {
+	float: none;
+	width: 100%;
+	padding-right: none;
+	}
+
+}
