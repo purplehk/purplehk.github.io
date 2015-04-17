@@ -9,6 +9,9 @@ body {
 
 header {
 	background-color: #00957f;
+	position: absolute;
+	width: 100%;
+	top: 0;
 }
 
 nav {
@@ -41,7 +44,8 @@ nav a:hover {
 main {
 	width: 920px;
 /*	border: 1px solid blue;*/
-	margin: 1em auto;
+	margin: 8.5em auto 1em auto;
+
 }
 
 
@@ -330,6 +334,14 @@ p {
 
 /*----------Mobile Nav----------*/
 
+	#logo {
+		padding-left: 50px;
+	}
+
+	main {
+		margin: 2em auto;
+	}
+
 	.hidden-nav {
 		    list-style: none;
 		    background: #005A8F;
@@ -459,6 +471,10 @@ p {
 	padding-right: none;
 	}
 
+	#search {
+		display: none;
+	}
+
 }
 
 
@@ -486,6 +502,10 @@ p {
 	float: none;
 	width: 100%;
 	padding-right: none;
+	}
+
+	#search {
+		display: none;
 	}
 
 }
