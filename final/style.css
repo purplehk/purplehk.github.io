@@ -98,6 +98,12 @@ p {
 	margin: .6em auto;
 }
 
+iframe {
+	width: 100%;
+	height: 20em;
+	display: block;
+}
+
 /*------------------------- Mobile Nav -----------------*/
 
 .hidden-nav {
@@ -213,6 +219,18 @@ p {
 
 #event-photo img {
 	width: 100%;
+}
+
+#event-profile > div {
+	padding: 2em 0;
+}
+
+#event-card, #event-details {
+	border-bottom: .1em solid #ecf1f2;
+}
+
+#event-photo {
+	padding: 1em;
 }
 
 .event-category {
