@@ -44,7 +44,7 @@ nav a:hover {
 main {
 	width: 960px;
 /*	border: 1px solid blue;*/
-	margin: 8.5em auto 1em auto;
+	margin: 7.5em auto 1em auto;
 
 }
 
@@ -81,6 +81,12 @@ h2 {
 
 h3 {
 	font-size: 1.2em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+
+h4 {
+	font-size: 1.1em;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 600;
 }
@@ -296,36 +302,36 @@ footer {
 	margin-right: .3em;
 }
 
-#event-4col {
+.event-4col {
 	margin-right: 3%;
 }
 
-#event-4col-last {
+.event-4col-last {
 	margin-right: 0;
 }
 
-#event-4col, #event-4col-last {
+.event-4col, .event-4col-last {
 	width: 22.5%;
 	float: left;
 }
 
 
-#event-4col h3:hover, #event-4col-last h3:hover{
+.event-4col h3:hover, .event-4col-last h3:hover{
 	color: #C6D3D7;
 }
 
 
-#event-4col img, #event-4col-last img {
+.event-4col img, .event-4col-last img {
 	width: 100%;
 	max-height: 10.5em;
 }
 
-#event-4col h3, #event-4col-last h3 {
+.event-4col h3, .event-4col-last h3 {
 	margin: .5em 0;
 	color: #00957f;
 }
 
-#event-4col p, #event-4col-last p {
+.event-4col p, .event-4col-last p {
 	margin: .2em 0;
 }
 
@@ -360,10 +366,110 @@ footer {
 	font-size: 1.1em;
 }
 
+
+/*-------------- Home Logged In ----------------*/
+
+#dashboard-events h2, #dashboard-communities h2, #dashboard-groups h2, #dashboard-momadvisors h2, #dashboard-messages h2 {
+	margin-bottom: .5em;
+
+}
+
+.dashboard-content {
+	border: .08em solid #c6d3d7;
+}
+
+.dashboard-content h3 {
+	text-transform: uppercase;
+	margin: .8em;
+
+}
+
+.event-listing {
+	margin: 1.5em 1em;
+
+}
+
+.event-listing img {
+	width: 10em;
+	float: left;
+}
+
+.event-listing-info {
+	float: left;
+	margin-left: 1em;
+}
+
+.event-listing-info h4 {
+	margin: .2em 0;
+	color: #00957f;
+}
+
+.event-listing-info p {
+	margin: .1em 0;
+}
+
+.discussion-card img {
+	width: 4em;
+	float: left;
+}
+
+.discussion-card-content {
+	float: left;
+}
+
+
+/*-------------- Home 2 Logged In ----------------*/
+
+#user-home {
+	width: 960px;
+/*	border: 1px solid blue;*/
+	margin: 3.5em auto 1em auto;
+}
+
+#user-home-nav {
+	background-color: #C6D3D7;
+	font-size: 1.1em;
+	width: 15em;
+}
+
+#user-home-nav ul {
+/*	padding: .6em 0;*/
+}
+
+#user-home-nav ul li {
+	float: none;
+	padding: 2em 0;
+	margin-left: 2em;
+/*	border-right: 1px solid #262626;*/
+}
+
+
+#user-home-nav ul li img {
+	width: 3em;
+	float: left;
+	margin-right: .5em;
+}
+
+#user-home-nav a {
+	font-family: 'Raleway', sans-serif;
+	color: #262626;
+	font-weight: 600;
+}
+
+#user-home-nav a:hover {
+	color: #fff;
+}
+
+#user-home-nav-edit {
+	font-size: .85em;
+}
+
+
+
 /*------------------------------ Profile -----------------*/
 
 #profile {
-	width: 65%;
+	width: 66%;
 /*	border: 1px solid green;*/
 	float: left;
 }
