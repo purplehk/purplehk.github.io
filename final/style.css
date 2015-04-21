@@ -20,7 +20,7 @@ nav {
 }
 
 nav ul {
-	width: 920px;
+	width: 960px;
 	margin: 0 auto;
 	padding: .6em 0;
 }
@@ -42,7 +42,7 @@ nav a:hover {
 }
 
 main {
-	width: 920px;
+	width: 960px;
 /*	border: 1px solid blue;*/
 	margin: 8.5em auto 1em auto;
 
@@ -104,6 +104,12 @@ iframe {
 	display: block;
 }
 
+footer {
+	background-color: #C6D3D7;
+	margin-top: 4em;
+	padding: 1.5em 0;
+}
+
 /*------------------------- Mobile Nav -----------------*/
 
 .hidden-nav {
@@ -117,14 +123,14 @@ iframe {
 /*----------------------------- Header -------------------*/
 
 #top-header {
-	width: 920px;
+	width: 960px;
 	margin: 0 auto;
 	padding: .5em 0;
 }
 
 #logo {
 	float: left;
-	margin: 0 2em 0 0;
+	margin: .5em 2em 0 0;
 }
 
 #search {
@@ -148,6 +154,210 @@ iframe {
 	cursor:pointer;
 	padding: 1%;
 	border: none;
+}
+
+
+
+/*-------------------- Footer --------------------*/
+
+#footer-nav {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#footer-nav ul {
+	float: right;
+}
+
+#footer-nav ul li {
+	display: inline-block;
+	padding-left: 5em;
+}
+
+#footer-nav ul li h3 a {
+	color: #262626;
+}
+
+#footer-nav ul li h3 a:hover {
+	color: #fff;
+}
+
+/*------------------ Home (not logged in) -----------------*/
+
+#home-fixed {
+	position: initial;
+}
+
+#home-header {
+	width: 960px;
+	margin: 0 auto;
+	padding: .5em 0;
+}
+#sign-in {
+	float: right;
+	margin-top: 1em;
+}
+
+#sign-in h3{
+	display: inline;
+	margin: none;
+}
+
+#hero {
+	background-image: url("images/summer-playground.jpg");
+	background-repeat: no-repeat;
+	height: 35em;
+	width: 100%;
+	margin-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#hero-content {
+	max-width: 27em;
+	text-align: left;
+	position: relative;
+	top: 16%;
+	left: 20%;
+	margin-bottom: 0;
+}
+
+#hero-content h1 {
+	font-size: 2.5em;
+	line-height: 1.5em;
+}
+
+#hero-content ul {
+	margin-left: 1.8em;
+}
+
+#hero-content ul li {
+	font-size: 1.5em;
+	margin-bottom: .8em;
+}
+
+#hero-content ul li img, #hero-content ul li p {
+	display: inline;
+}
+
+#hero-content ul li img {
+	margin-right: .5em;
+}
+
+#hero-join {
+	background: rgba(26, 26, 26, .7);
+	padding: 1.5em;
+	font-family: 'Raleway', sans-serif;
+	color: #005a8f;
+	margin-top: 13.2em;
+}
+
+#submit {
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+#hero-join button {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5em;
+	background-color: #ffd425;
+	cursor: pointer;
+	height: 2em;	
+	padding: .3em;
+	float: left;
+	margin-left: .5em;
+}
+
+#hero-join button:hover {
+	background-color: #00957f;
+	color: #fff;
+	-o-transition: .3s;
+	-ms-transition: .3s;
+	-moz-transition: .3s;
+	-webkit-transition: .3s;
+	transition: .3s;
+
+}
+
+#home {
+	margin-top: 3em;
+}
+
+#home-events-head {
+	margin-bottom: 1.5em;
+}
+
+#home-events-head h2{
+	display: inline;
+	margin-right: .8em
+}
+
+#home-events-head a{
+	margin-right: .3em;
+}
+
+#event-4col {
+	margin-right: 3%;
+}
+
+#event-4col-last {
+	margin-right: 0;
+}
+
+#event-4col, #event-4col-last {
+	width: 22.5%;
+	float: left;
+}
+
+
+#event-4col h3:hover, #event-4col-last h3:hover{
+	color: #C6D3D7;
+}
+
+
+#event-4col img, #event-4col-last img {
+	width: 100%;
+	max-height: 10.5em;
+}
+
+#event-4col h3, #event-4col-last h3 {
+	margin: .5em 0;
+	color: #00957f;
+}
+
+#event-4col p, #event-4col-last p {
+	margin: .2em 0;
+}
+
+
+.submit-field {
+	border: .125em solid #262626;
+	border-radius: .125em;
+	background-color: #fff;
+	display: inline-block;
+	width: 16.1em;
+	float: left;
+	height: 3em;
+}
+
+.submit-field p {
+	float: left;
+	margin-left: 1em;
+	font-size: 1.5em;
+}
+
+
+/*
+.delius {
+	font-family: 'Delius', cursive;
+	color: #ffd425;
+	font-size: 1.1em;
+}*/
+
+.lily {
+	font-family: 'Lily Script One', cursive;
+	color: #00957f;
+	font-size: 1.1em;
 }
 
 /*------------------------------ Profile -----------------*/
@@ -221,12 +431,21 @@ iframe {
 	width: 100%;
 }
 
-#event-profile > div {
-	padding: 2em 0;
+
+#event-card {
+	padding-bottom: 2em;
 }
 
 #event-card, #event-details {
 	border-bottom: .1em solid #ecf1f2;
+}
+
+#event-details, #event-extra {
+	padding: 2em 0;
+}
+
+#event-map {
+	padding: 1em;
 }
 
 #event-photo {
@@ -300,6 +519,7 @@ iframe {
 	height: 0;
 }
 
+
 /*------------------------------Media Queries------------------*/
 
 @media screen and (max-width: 1000px) {
@@ -329,6 +549,12 @@ iframe {
 		width: 100%;
 		margin: 0 auto;
 		padding: .5em 0;
+	}
+
+	#footer-nav {
+		width: 100%;
+		display: block;
+		float: none;
 	}
 
 
@@ -458,6 +684,10 @@ iframe {
 
 	section {
 		padding: 1.5em 1.2em;
+	}
+
+	#search {
+	width: 40%;
 	}
 
 }
