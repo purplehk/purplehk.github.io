@@ -285,6 +285,11 @@ footer {
 
 }
 
+#mobile-sign-in {
+	display: none;
+}
+
+
 #home {
 	margin-top: 3em;
 }
@@ -352,6 +357,44 @@ footer {
 	font-size: 1.5em;
 }
 
+#home-intro {
+	margin-top: 2em;
+}
+
+#home-intro p {
+	font-size: 1.1em;
+	line-height: 1.6em;
+}
+
+.home-intro-mom {
+	margin: 1.5em 0 2em 2em;
+	width: 42%;
+	float: left;
+}
+
+.home-intro-mom-2 {
+	margin: 1.5em 3em 2em 0;
+	width: 42%;
+	float: right;
+}
+
+.home-intro-mom-top {
+	margin-bottom: 2em;
+}
+
+.home-intro-mom-top img {
+	float: left;
+	width: 35%;
+	margin-right: 2em;
+}
+
+.home-intro-namecard {
+	padding-top: 2em;
+}
+
+.home-intro-details {
+	clear: both;
+}
 
 /*
 .delius {
@@ -364,6 +407,9 @@ footer {
 	font-family: 'Lily Script One', cursive;
 	color: #00957f;
 	font-size: 1.1em;
+}
+
+.quote {
 }
 
 
@@ -626,7 +672,7 @@ footer {
 }
 
 
-/*------------------------------Media Queries------------------*/
+/*--------------------------------------- MEDIA QUERIES ----------------------------*/
 
 @media screen and (max-width: 1000px) {
 	.hidden-nav {
@@ -861,5 +907,411 @@ footer {
 	#search {
 		display: none;
 	}
+
+}
+
+
+
+
+
+/*-------------- Media Queries for Home Not Logged In --------------*/
+
+@media only screen and (min-width: 850px) and (max-width: 1100px) {
+
+#hero {
+
+	background-image: url("images/summer-playground.jpg");
+	background-repeat: no-repeat;
+	height: 35em;
+	width: 100%;
+	margin-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+	clear: both;
+}
+
+#hero-content {
+	position: static;
+	float: left;
+	margin-top: 10%;
+	margin-left: 5%;
+
+}
+
+#hero-join {
+	position: static;
+	margin-top: 10%;
+	margin-left: 8%;
+	width: 40%;
+	float: left;
+}
+
+#submit {
+	margin: 0 auto;
+}
+
+#hero-join button {
+	float: right;
+}
+
+
+.submit-field {
+	border: .125em solid #262626;
+	border-radius: .125em;
+	background-color: #fff;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: .5em;
+	float: left;
+	height: 3em;
+}
+
+}
+
+@media only screen and (min-width: 450px) and (max-width: 849px) {
+
+#home-fixed {
+	position: initial;
+}
+
+#home-header {
+	width: 100%;
+	margin: 0;
+	padding: .5em 0;
+	clear: both;
+}
+
+#logo {
+	padding-left: 0;
+	margin: 0 auto;
+	float: none;
+	width: 300px;
+}
+
+#sign-in {
+	display: none;
+}
+
+#hero {
+	background-image: url("images/summer-playground.jpg");
+	background-repeat: no-repeat;
+	height: 35em;
+	width: 100%;
+	margin-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#hero-content {
+	position: static;
+	margin: 4em auto;
+	text-align: center;
+}
+
+#hero-join {
+	position: static;
+	margin-top: 6em;
+	padding: 0;
+	height: 9.5em;
+
+}
+
+#mobile-sign-in {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+#mobile-sign-in h3 {
+	display: inline;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+#mobile-sign-in a h3:hover {
+	color: #005a8f;
+}
+
+#submit {
+}
+
+#hero-join button {
+	height: 2em;
+	width: 52%;	
+	padding: 0;
+	position: relative;
+	margin: 2em 25% .8em 25%;
+}
+
+
+#home {
+	margin-top: 3em;
+}
+
+#home-events-head {
+	margin-bottom: 1.5em;
+}
+
+#home-events-head h2{
+	display: inline;
+	margin-right: .8em
+}
+
+#home-events-head a{
+	margin-right: .3em;
+}
+
+.event-4col {
+	margin-right: 3%;
+	margin-bottom: 2em;
+}
+
+.event-4col-last {
+	margin-right: 0;
+}
+
+.event-4col, .event-4col-last {
+	width: 47%;
+	float: left;
+}
+
+
+.event-4col h3:hover, .event-4col-last h3:hover{
+	color: #C6D3D7;
+}
+
+
+.event-4col img, .event-4col-last img {
+	width: 100%;
+	max-height: 15em;
+}
+
+.event-4col h3, .event-4col-last h3 {
+	margin: .5em 0;
+	color: #00957f;
+}
+
+.event-4col p, .event-4col-last p {
+	margin: .2em 0;
+}
+
+
+.submit-field {
+	display: none;
+}
+
+#home-intro {
+	margin-top: 2em;
+}
+
+#home-intro p {
+	font-size: 1.1em;
+	line-height: 1.6em;
+}
+
+.home-intro-mom {
+	margin: 1.5em 0 2em 2em;
+	width: 97%;
+	float: left;
+}
+
+.home-intro-mom-2 {
+	margin: 1.5em 0 2em 2em;
+	width: 97%;
+	float: left;
+}
+
+.home-intro-mom-top {
+	margin-bottom: 2em;
+}
+
+.home-intro-mom-top img {
+	float: left;
+	width: 20%;
+	margin-right: 2em;
+}
+
+.home-intro-namecard {
+	padding-top: 2em;
+}
+
+.home-intro-details {
+	clear: both;
+}
+}
+
+@media only screen and (max-width: 449px) {
+
+#home-fixed {
+	position: initial;
+}
+
+#home-header {
+	width: 100%;
+	margin: 0;
+	padding: .5em 0;
+	clear: both;
+}
+
+#logo {
+	padding-left: 0;
+	margin: 0 auto;
+	float: none;
+	width: 300px;
+}
+
+#sign-in {
+	display: none;
+}
+
+#hero {
+	background-image: url("images/summer-playground.jpg");
+	background-repeat: no-repeat;
+	height: 35em;
+	width: 100%;
+	margin-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#hero-content {
+	position: static;
+	margin: 4em auto;
+	text-align: center;
+}
+
+#hero-join {
+	position: static;
+	margin-top: 6em;
+	padding: 0;
+	height: 9.5em;
+
+}
+
+#mobile-sign-in {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+#mobile-sign-in h3 {
+	display: inline;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+#mobile-sign-in a h3:hover {
+	color: #005a8f;
+}
+
+#submit {
+}
+
+#hero-join button {
+	height: 2em;
+	width: 52%;	
+	padding: 0;
+	position: relative;
+	margin: 2em 25% .8em 25%;
+}
+
+
+#home {
+	margin-top: 3em;
+}
+
+#home-events-head {
+	margin-bottom: 1.5em;
+}
+
+#home-events-head h2{
+	display: inline;
+	margin-right: .8em
+}
+
+#home-events-head a{
+	margin-right: .3em;
+}
+
+.event-4col {
+	margin-right: 3%;
+	margin-bottom: 2em;
+}
+
+.event-4col-last {
+	margin-right: 0;
+}
+
+.event-4col, .event-4col-last {
+	width: 94%;
+	float: none;
+	margin: 0 auto 2em auto;
+}
+
+
+.event-4col h3:hover, .event-4col-last h3:hover{
+	color: #C6D3D7;
+}
+
+
+.event-4col img, .event-4col-last img {
+	width: 100%;
+	max-height: 25em;
+}
+
+.event-4col h3, .event-4col-last h3 {
+	margin: .5em 0;
+	color: #00957f;
+}
+
+.event-4col p, .event-4col-last p {
+	margin: .2em 0;
+}
+
+
+.submit-field {
+	display: none;
+}
+
+#home-intro {
+	margin-top: 2em;
+}
+
+#home-intro p {
+	font-size: 1.1em;
+	line-height: 1.6em;
+}
+
+.home-intro-mom {
+	margin: 1.5em 0 2em 2em;
+	width: 97%;
+	float: left;
+}
+
+.home-intro-mom-2 {
+	margin: 1.5em 0 2em 2em;
+	width: 97%;
+	float: left;
+}
+
+.home-intro-mom-top {
+	margin-bottom: 2em;
+}
+
+.home-intro-mom-top img {
+	float: left;
+	width: 40%;
+	margin-right: 2em;
+}
+
+.home-intro-namecard {
+	padding-top: 2em;
+}
+
+.home-intro-details {
+	clear: both;
+}
 
 }
