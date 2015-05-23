@@ -1177,8 +1177,16 @@ footer {
 
 #hero-content {
 	position: static;
-	margin: 4em auto;
+	margin: 6em auto;
 	text-align: center;
+}
+
+#hero-content h1 {
+	font-size: 1.8em;
+}
+
+#hero-content p {
+	font-size: .8em;
 }
 
 #hero-join {
@@ -1199,6 +1207,7 @@ footer {
 #mobile-sign-in h3 {
 	display: inline;
 	font-weight: 500;
+	font-size: 1em;
 	color: #ffffff;
 }
 
@@ -1285,13 +1294,13 @@ footer {
 }
 
 .home-intro-mom {
-	margin: 1.5em 0 2em 2em;
+	margin: 1.5em 0 1em 0;
 	width: 97%;
 	float: left;
 }
 
 .home-intro-mom-2 {
-	margin: 1.5em 0 2em 2em;
+	margin: 1.5em 0 1em 0;
 	width: 97%;
 	float: left;
 }
